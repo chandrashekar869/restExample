@@ -1,0 +1,35 @@
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-5 offset-md-4 outerDiv" >
+            <h1 align='center'>List of Users</h1>
+            <ng-container *ngIf="resData.length!=0">
+              <div  class="row innerDiv" *ngFor="let data of resData">
+                <div class="col-md-3">
+                    <img [src]="data.avatar" style="border-radius: 50%;padding:5%;"/>
+                  </div>
+                  <div class="col-md-6">
+                  <div class="row" style="margin-left:2rem;margin-top: 2rem;">
+                  <div class="col-md-12">
+                      <p>First Name:{{data.first_name}}</p>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-md-12" style="margin-left:3rem;">
+                      <p>Last Name:{{data.last_name}}</p>
+                  </div>
+                  </div>
+                  </div>                  
+            </div>
+          </ng-container>
+          <ng-container *ngIf="resData.length==0">
+              <div  class="row innerDiv" >
+                  <div class="col-md-3">
+                      No data to display
+                  </div>
+              </div>  
+          </ng-container>
+          </div>
+      </div>
+  </div>
+</div>

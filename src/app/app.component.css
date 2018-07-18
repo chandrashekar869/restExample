@@ -1,0 +1,17 @@
+.outerDiv{
+    background-color: rgb(9, 156, 9);
+    padding:0 2% 3% 2%;
+    border-radius:5%;
+}
+h1{
+    padding:5%;
+    color:white;
+}
+.innerDiv{
+    border-bottom:1px solid black;
+    margin-bottom:1%;
+    background-color: blanchedalmond;
+}
+img{
+    border-radius: 50%;padding:5%;
+}
